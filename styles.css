@@ -56,11 +56,14 @@ input[type="range"] {
     color: white;
 }
 
+.player__video {
+	display: flex;
+}
 
 
-
-
-
+#toggle {
+	padding: 1px;
+}
 
 
 
