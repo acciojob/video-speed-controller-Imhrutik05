@@ -1,4 +1,10 @@
-// 1 - first working on play and pause button
+
+
+const video = document.querySelector('.player__video');
+if (video) {
+  video.addEventListener('play', () => {
+    // Your event handling logic
+	  // 1 - first working on play and pause button
 const playPauseBtn = document.getElementById('playPauseBtn');
 const video = document.querySelector('video');
 
@@ -66,7 +72,10 @@ playbackSpeedInput.addEventListener('input', () => {
     speedText.textContent = `${playbackSpeedInput.value}x`;
 });
 
-
+  });
+} else {
+  console.log('Video element not found!');
+}
 
 
 
