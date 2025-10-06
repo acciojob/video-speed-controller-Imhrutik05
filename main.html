@@ -8,11 +8,29 @@
 <body>
 
   <div class="wrapper">
-    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
-    <div class="speed">
-      <div class="speed-bar">1×</div>
+        <video class="flex" width="765" height="430" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+        <div class="controls">
+
+            <!-- play and pause button -->
+            <button class="player__button" id="playPauseBtn" >►</button>
+            
+            <!-- rewind and forward video buttons -->
+            <button class="skip" id="skipBack">« 10s</button>
+            <button class="skip" id="skipForward">25s »</button>
+
+            <!-- progress bar (input element to slide to any video position, div for visual representation) -->
+            <input type="range" class="progress" id="progress" value="0" >
+            <div class="progress__filled"></div>
+
+            <!-- input fields for volume and playbackSpeed -->
+            <input type="range" class="volume" id="volume" min="0" max="100" step="1" value="50" >
+            <input type="range" class="playbackSpeed" id="playbackSpeed" min="0.5" max="2" step="0.1" value="1" >
+
+            <div class="speed">
+                <div class="speedText">1×</div>
+            </div>
+        </div>
     </div>
-  </div>
 
 <script  src="./script.js">
   //Your code goes here

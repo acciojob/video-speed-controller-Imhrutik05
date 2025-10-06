@@ -1,2 +1,67 @@
 
 /* Your CSS Code here. */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0d0c0c;
+    margin: 0;
+}
+
+.wrapper {
+    width: 800px;
+    text-align: center;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+button, input[type="range"] {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.progress__filled {
+    height: 5px;
+    background-color: #2196F3;
+}
+
+.speedBar {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skip {
+    font-size: 18px;
+}
+
+.speedText {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
