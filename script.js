@@ -5,8 +5,8 @@ if (video) {
   video.addEventListener('play', () => {
     // Your event handling logic
 	  // 1 - first working on play and pause button
-const playPauseBtn = document.getElementById('playPauseBtn');
-const video = document.querySelector('video');
+const playPauseBtn = document.querySelector('toggle');
+const video = document.querySelector('.player__video');
 
 // adding eventListener on play/pause button
 playPauseBtn.addEventListener('click', () => {
@@ -41,8 +41,8 @@ progressBar.addEventListener('input', () => {
 
 
 // 3 - skip buttons
-const skipBackBtn = document.getElementById('skipBack');
-const skipForwardBtn = document.getElementById('skipForward');
+const skipBackBtn = document.getElementById('rewind');
+const skipForwardBtn = document.getElementById('forward');
 
 // skipBackBtn adding Event Listener
 skipBackBtn.addEventListener('click', () => {
